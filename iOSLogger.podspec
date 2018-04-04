@@ -31,12 +31,12 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'iOSLogger/Classes/**/*'
-  
-  # s.resource_bundles = {
+  s.swift_version = '4.0'
+# s.resource_bundles = {
   #   'iOSLogger' => ['iOSLogger/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'Zip'
+  s.dependency 'Zip', '~> 1.1'
 end

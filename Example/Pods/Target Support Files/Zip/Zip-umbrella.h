@@ -10,8 +10,8 @@
 #endif
 #endif
 
-#import "Header.h"
+#import "Zip.h"
 
-FOUNDATION_EXPORT double iOSLoggerVersionNumber;
-FOUNDATION_EXPORT const unsigned char iOSLoggerVersionString[];
+FOUNDATION_EXPORT double ZipVersionNumber;
+FOUNDATION_EXPORT const unsigned char ZipVersionString[];
 

@@ -10,8 +10,3 @@
 #endif
 #endif
 
-#import "Header.h"
-
-FOUNDATION_EXPORT double iOSLoggerVersionNumber;
-FOUNDATION_EXPORT const unsigned char iOSLoggerVersionString[];
-
