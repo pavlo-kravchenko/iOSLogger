@@ -1,6 +1,6 @@
 # iOSLogger
 
-[![CI Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://travis-ci.org/pavel-zlotarenchuk/iOSLogger)
+[![CI Status](http://img.shields.io/travis/pavel-zlotarenchuk/iOSLogger.svg?style=flat)](https://travis-ci.org/pavel-zlotarenchuk/iOSLogger)
 [![Version](https://img.shields.io/cocoapods/v/iOSLogger.svg?style=flat)](http://cocoapods.org/pods/iOSLogger)
 [![License](https://img.shields.io/github/license/pavel-zlotarenchuk/iOSLogger.svg)](https://github.com/pavel-zlotarenchuk/iOSLogger/blob/master/LICENSE)
 [![Platform](https://img.shields.io/cocoapods/p/iOSLogger.svg?style=flat)](http://cocoapods.org/pods/iOSLogger)
@@ -63,7 +63,7 @@ Pavel Zlotarenchuk (pavel.zlotarenchuk@gmail.com)
 
 ## License
 ```
-    Copyright 2013 viktord1985 GreenMoby.
+    Copyright 2013 viktord1985, GreenMoby.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
