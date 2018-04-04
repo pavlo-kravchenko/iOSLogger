@@ -17,8 +17,8 @@ public class IOSLogger : NSObject{
     
     static let instance = IOSLogger()
     
-    public static var appName: String = "AppName"
-    public static var authorEmail: String = "authorEmail"
+    public static var appName: String = "app name"
+    public static var authorEmail: String = "author email"
     public static var logFileURL: URL?
     public static let fileManager = FileManager.default
     public static var fileHandle: FileHandle?
@@ -34,18 +34,6 @@ public class IOSLogger : NSObject{
             print("Error: Logger is not active")
         }
     }
-    
-//    public static func myInit(appName : String){
-//        IOSLogger.appName = appName;
-//        let fileName = appName;
-//        let dir = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
-//        if let url = dir?.appendingPathComponent(fileName).appendingPathExtension("txt") {
-//            IOSLogger.logFileURL = url
-//            print("Info: Logger is active")
-//        } else {
-//            print("Error: Logger is not active")
-//        }
-//    }
     
     public static func v (textLog : String){
         IOSLogger.saveToFile(stringLog: "Verbose: \(textLog)")
@@ -104,7 +92,7 @@ public class IOSLogger : NSObject{
         }
     }
     
-    public static func readFile() {
+    public static func readLogs() {
         if let url = self.logFileURL {
             var inString = ""
             do {

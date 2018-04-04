@@ -5,11 +5,15 @@
 [![License](https://img.shields.io/cocoapods/l/iOSLogger.svg?style=flat)](http://cocoapods.org/pods/iOSLogger)
 [![Platform](https://img.shields.io/cocoapods/p/iOSLogger.svg?style=flat)](http://cocoapods.org/pods/iOSLogger)
 
+A Swift 4.0 framework for logging your apps. Simple and quick to use.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+iOS higher 10.3
 
 ## Installation
 
@@ -17,10 +21,41 @@ iOSLogger is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-use_frameworks!
-pod 'iOSLogger', :git => 'https://github.com/pavel-zlotarenchuk/iOSLogger.git'
+    use_frameworks!
+    pod 'iOSLogger', :git => 'https://github.com/pavel-zlotarenchuk/iOSLogger.git'
 ```
 And run  `pod install`
+
+## Usage
+
+Import iOSLogger at the top of the Swift file.
+```swift
+    import iOSLogger
+```
+In AppDelegat use:
+```swift
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        IOSLogger.appName = "NameYouApp"
+        IOSLogger.authorEmail = "youemail@gmail.com"
+        return true
+    }
+```
+In the place where you want to record the log:
+```swift
+    IOSLogger.v() - for verbose
+    IOSLogger.d() - for debug
+    IOSLogger.i() - for info
+    IOSLogger.w() - for warn
+    IOSLogger.e() - for error
+```
+In the place where you want to read log from file:
+```Swift
+IOSLogger.readLogs()
+```
+In the place where you want to send logs to the mail::
+```Swift
+    IOSLogger.sendLogs()
+```
 
 ## Author
 
@@ -28,7 +63,7 @@ Pavel Zlotarenchuk (pavel.zlotarenchuk@gmail.com)
 
 ## License
 ```
-    Copyright 2013 pavel-zlotarenchuk, GrenMoby.
+    Copyright 2013 pavel-zlotarenchuk, GreenMoby.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
