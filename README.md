@@ -1,8 +1,8 @@
 # iOSLogger
 
-[![CI Status](http://img.shields.io/travis/pavel-zlotarenchuk/iOSLogger.svg?style=flat)](https://travis-ci.org/pavel-zlotarenchuk/iOSLogger)
+[![CI Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://travis-ci.org/pavel-zlotarenchuk/iOSLogger)
 [![Version](https://img.shields.io/cocoapods/v/iOSLogger.svg?style=flat)](http://cocoapods.org/pods/iOSLogger)
-[![License](https://img.shields.io/cocoapods/l/iOSLogger.svg?style=flat)](http://cocoapods.org/pods/iOSLogger)
+[![License](https://img.shields.io/github/license/pavel-zlotarenchuk/iOSLogger.svg)](https://github.com/pavel-zlotarenchuk/iOSLogger/blob/master/LICENSE)
 [![Platform](https://img.shields.io/cocoapods/p/iOSLogger.svg?style=flat)](http://cocoapods.org/pods/iOSLogger)
 
 A Swift 4.0 framework for logging your apps. Simple and quick to use.
@@ -28,7 +28,7 @@ And run  `pod install`
 
 ## Usage
 
-Import iOSLogger at the top of the Swift file.
+Import iOSLogger to the top of the Swift file.
 ```swift
     import iOSLogger
 ```
@@ -50,7 +50,7 @@ In the place where you want to record the log:
 ```
 In the place where you want to read log from file:
 ```Swift
-IOSLogger.readLogs()
+    IOSLogger.readLogs()
 ```
 In the place where you want to send logs to the mail::
 ```Swift
@@ -63,7 +63,7 @@ Pavel Zlotarenchuk (pavel.zlotarenchuk@gmail.com)
 
 ## License
 ```
-    Copyright 2013 pavel-zlotarenchuk, GreenMoby.
+    Copyright 2013 viktord1985 GreenMoby.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
