@@ -17,4 +17,4 @@ before_install:
 
 script:
 # - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/iOSLogger.xcworkspace -scheme iOSLogger-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
-- pod lib lint --allow-warnings
+- pod spec lint
