@@ -35,10 +35,6 @@ public class IOSLogger : NSObject{
         }
     }
     
-    public static func log (with tag : String, textLog : String){
-        IOSLogger.saveToFile(stringLog: "\(tag): \(textLog)")
-    }
-    
     public static func v (textLog : String){
         IOSLogger.saveToFile(stringLog: "Verbose: \(textLog)")
     }
@@ -61,9 +57,11 @@ public class IOSLogger : NSObject{
     
     public static func saveToFile(stringLog : String) {
         print(stringLog)
+        // TODO: url
         if let url = self.logFileURL {
             do {
                 if fileManager.fileExists(atPath: url.path) == false {
+                    // create file if not existing
                     let line = stringLog + "\n"
                     try line.write(to: url, atomically: true, encoding: .utf8)
                     
@@ -75,7 +73,9 @@ public class IOSLogger : NSObject{
                         }
                     #endif
                 } else {
+                    // append to end of file
                     if fileHandle == nil {
+                        // initial setting of file handle
                         fileHandle = try FileHandle(forWritingTo: url as URL)
                     }
                     if let fileHandle = fileHandle {

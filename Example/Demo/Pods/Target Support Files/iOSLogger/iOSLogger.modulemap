@@ -1,0 +1,6 @@
+framework module iOSLogger {
+  umbrella header "iOSLogger-umbrella.h"
+
+  export *
+  module * { export * }
+}

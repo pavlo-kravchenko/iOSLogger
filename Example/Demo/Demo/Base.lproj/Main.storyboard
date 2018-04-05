@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Uv-TK-6J4">
+                                <rect key="frame" x="16" y="40" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9PB-if-Qee">
+                                <rect key="frame" x="16" y="78" width="94" height="30"/>
+                                <state key="normal" title="IOSLogger.v()"/>
+                                <connections>
+                                    <action selector="vActionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rh9-RN-ZHN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lil-fn-kcz">
+                                <rect key="frame" x="16" y="116" width="96" height="30"/>
+                                <state key="normal" title="IOSLogger.d()"/>
+                                <connections>
+                                    <action selector="dActionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RU9-8H-PJv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwo-IS-XDG">
+                                <rect key="frame" x="16" y="192" width="98" height="30"/>
+                                <state key="normal" title="IOSLogger.w()"/>
+                                <connections>
+                                    <action selector="wActionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PHX-1z-coh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NY1-xk-EyI">
+                                <rect key="frame" x="16" y="154" width="91" height="30"/>
+                                <state key="normal" title="IOSLogger.i()"/>
+                                <connections>
+                                    <action selector="iActionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wd8-9e-PtE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYx-BP-2er">
+                                <rect key="frame" x="16" y="230" width="95" height="30"/>
+                                <state key="normal" title="IOSLogger.e()"/>
+                                <connections>
+                                    <action selector="eActionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xLP-SF-bQQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLr-VB-aBK">
+                                <rect key="frame" x="16" y="268" width="151" height="30"/>
+                                <state key="normal" title="IOSLogger.readLogs()"/>
+                                <connections>
+                                    <action selector="readLogsActionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zjk-AP-5Ea"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Console:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTw-Dv-fCG">
+                                <rect key="frame" x="16" y="346" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Zm-8s-AVv">
+                                <rect key="frame" x="16" y="306" width="154" height="30"/>
+                                <state key="normal" title="IOSLogger.sendLogs()"/>
+                                <connections>
+                                    <action selector="sendLogsActionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OQI-Vr-NTa"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XYZ-uE-h24">
+                                <rect key="frame" x="16" y="383" width="343" height="264"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="247" verticalHuggingPriority="248" text="" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igJ-lP-MBv">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="igJ-lP-MBv" firstAttribute="top" secondItem="XYZ-uE-h24" secondAttribute="top" id="Q3S-Yj-RXd"/>
+                                    <constraint firstItem="igJ-lP-MBv" firstAttribute="leading" secondItem="XYZ-uE-h24" secondAttribute="leading" priority="2" id="bU7-gm-aAc"/>
+                                    <constraint firstAttribute="bottom" secondItem="igJ-lP-MBv" secondAttribute="bottom" constant="264" id="fZv-4f-PWP"/>
+                                    <constraint firstAttribute="trailing" secondItem="igJ-lP-MBv" secondAttribute="trailing" priority="2" id="sGB-7f-keM"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nYx-BP-2er" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="0sm-Ne-xY3"/>
+                            <constraint firstItem="9Uv-TK-6J4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Cv8-HM-uom"/>
+                            <constraint firstItem="9Uv-TK-6J4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="EZS-T4-WM3"/>
+                            <constraint firstItem="NY1-xk-EyI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Faf-se-BE2"/>
+                            <constraint firstItem="PTw-Dv-fCG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="GVb-Pc-3TL"/>
+                            <constraint firstItem="9PB-if-Qee" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="RmM-Hs-z44"/>
+                            <constraint firstItem="9PB-if-Qee" firstAttribute="top" secondItem="9Uv-TK-6J4" secondAttribute="bottom" constant="8" id="Vgy-vu-i8G"/>
+                            <constraint firstItem="gLr-VB-aBK" firstAttribute="top" secondItem="nYx-BP-2er" secondAttribute="bottom" constant="8" id="Xvo-jq-AfR"/>
+                            <constraint firstItem="lil-fn-kcz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Y4P-97-TA3"/>
+                            <constraint firstItem="3Zm-8s-AVv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Zct-D1-wwy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XYZ-uE-h24" secondAttribute="trailing" constant="16" id="a8y-Lh-hjt"/>
+                            <constraint firstItem="XYZ-uE-h24" firstAttribute="top" secondItem="PTw-Dv-fCG" secondAttribute="bottom" constant="16" id="df8-hT-yxP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XYZ-uE-h24" secondAttribute="bottom" constant="20" id="dwg-Xw-woq"/>
+                            <constraint firstItem="bwo-IS-XDG" firstAttribute="top" secondItem="NY1-xk-EyI" secondAttribute="bottom" constant="8" id="h0L-dW-sd4"/>
+                            <constraint firstItem="PTw-Dv-fCG" firstAttribute="top" secondItem="3Zm-8s-AVv" secondAttribute="bottom" constant="10" id="jmm-bu-qYN"/>
+                            <constraint firstItem="3Zm-8s-AVv" firstAttribute="top" secondItem="gLr-VB-aBK" secondAttribute="bottom" constant="8" id="kZX-TE-0gU"/>
+                            <constraint firstItem="bwo-IS-XDG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="l95-jO-lhu"/>
+                            <constraint firstItem="NY1-xk-EyI" firstAttribute="top" secondItem="lil-fn-kcz" secondAttribute="bottom" constant="8" id="lnY-6a-EWb"/>
+                            <constraint firstItem="PTw-Dv-fCG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="16" id="pad-GW-t7M"/>
+                            <constraint firstItem="nYx-BP-2er" firstAttribute="top" secondItem="bwo-IS-XDG" secondAttribute="bottom" constant="8" id="piA-23-zPq"/>
+                            <constraint firstItem="gLr-VB-aBK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tJp-hs-r6x"/>
+                            <constraint firstItem="lil-fn-kcz" firstAttribute="top" secondItem="9PB-if-Qee" secondAttribute="bottom" constant="8" id="vs7-w0-c6F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Uv-TK-6J4" secondAttribute="trailing" constant="16" id="w3l-sW-iPE"/>
+                            <constraint firstItem="XYZ-uE-h24" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="yrg-nn-gEO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="consoleText" destination="igJ-lP-MBv" id="QTh-1f-2aQ"/>
+                        <outlet property="dButton" destination="lil-fn-kcz" id="BdX-va-olA"/>
+                        <outlet property="eButton" destination="nYx-BP-2er" id="ZBz-BH-dC9"/>
+                        <outlet property="enterText" destination="9Uv-TK-6J4" id="otc-Ph-p3k"/>
+                        <outlet property="iButton" destination="NY1-xk-EyI" id="64K-ur-jSt"/>
+                        <outlet property="readLogsButton" destination="gLr-VB-aBK" id="MKd-og-Stm"/>
+                        <outlet property="sendLogsButton" destination="3Zm-8s-AVv" id="pUa-9Y-u4M"/>
+                        <outlet property="vButton" destination="9PB-if-Qee" id="FHD-Z5-sqB"/>
+                        <outlet property="wButton" destination="bwo-IS-XDG" id="Vw4-vX-ahQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
+        </scene>
+    </scenes>
+</document>
