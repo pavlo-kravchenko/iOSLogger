@@ -15,23 +15,30 @@ import Zip
 
 public class IOSLogger : NSObject{
     
-    static let instance = IOSLogger()
+    public static let instance = IOSLogger()
     
-    public static var appName: String = "app name"
-    public static var authorEmail: String = "author email"
+    public static var appName: String = ""
+    public static var authorEmail: String = ""
     public static var logFileURL: URL?
     public static let fileManager = FileManager.default
     public static var fileHandle: FileHandle?
     
     override init() {
         super.init()
-        let fileName = IOSLogger.appName;
+        IOSLogger.myInit(appName: "app name", authorEmail: "author email")
+    }
+    
+    public static func myInit(appName : String, authorEmail : String){
+        IOSLogger.appName = appName
+        IOSLogger.authorEmail = authorEmail
+        
+        let fileName = "\(IOSLogger.appName)";
         let dir = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
         if let url = dir?.appendingPathComponent(fileName).appendingPathExtension("txt") {
             IOSLogger.logFileURL = url
-            print("Info: Logger is active")
+            print("iOSLogger: Logger is active")
         } else {
-            print("Error: Logger is not active")
+            print("iOSLogger: Error! Logger is not active")
         }
     }
     
@@ -61,7 +68,7 @@ public class IOSLogger : NSObject{
     
     public static func saveToFile(stringLog : String) {
         print(stringLog)
-        if let url = self.logFileURL {
+        if let url = IOSLogger.logFileURL {
             do {
                 if fileManager.fileExists(atPath: url.path) == false {
                     let line = stringLog + "\n"
@@ -93,14 +100,14 @@ public class IOSLogger : NSObject{
     }
     
     public static func readLogs() {
-        if let url = self.logFileURL {
+        if let url = IOSLogger.logFileURL {
             var inString = ""
             do {
                 inString = try String(contentsOf: url)
             } catch {
                 print("Failed reading from URL: \(url), Error: " + error.localizedDescription)
             }
-            print("Read: \(inString)")
+            print(inString)
         }
     }
     

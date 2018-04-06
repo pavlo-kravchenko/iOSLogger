@@ -4,17 +4,20 @@ PODS:
   - Zip (1.1.0)
 
 DEPENDENCIES:
-  - iOSLogger
+  - iOSLogger (from `/Users/mac/git/iOSLogger`)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - iOSLogger
     - Zip
 
+EXTERNAL SOURCES:
+  iOSLogger:
+    :path: "/Users/mac/git/iOSLogger"
+
 SPEC CHECKSUMS:
-  iOSLogger: 159e453324256f22cb515cbfedceff21d41e3488
+  iOSLogger: 09b04de596de17b421e922c2023214f6a481f7d9
   Zip: 8877eede3dda76bcac281225c20e71c25270774c
 
-PODFILE CHECKSUM: 2a5a7554729d3f619a7b80a8f70c88a3685c94ec
+PODFILE CHECKSUM: fcaac2ca227a8d3dda221ff8ef2551a2e1184ccf
 
 COCOAPODS: 1.5.0

@@ -7,29 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1174C145F1A8D545FB03A2B233131989 /* IOSLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16214F28196433C71ADF648C2776C474 /* IOSLogger.swift */; };
-		14DE9E5D18803050945EF07114305274 /* Zip-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB26915580996064DF5B9BB1520F9274 /* Zip-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2F34264014614F4F36FEFD37CD161F2A /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = F2226005A5E6FB000B9B31AB7AA7537D /* zip.c */; };
-		373B46C75738AEC1B530CBF32C1706B0 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 13E30AE87908D8D33930A556A410B6EE /* unzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1174C145F1A8D545FB03A2B233131989 /* IOSLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D924478316BF5B99AC0D71E798AD1E /* IOSLogger.swift */; };
+		14DE9E5D18803050945EF07114305274 /* Zip-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 281B80DB04F8E3C20B56299A7FC32180 /* Zip-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F34264014614F4F36FEFD37CD161F2A /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 61D62AA3B7A92122BD10FC08B6FADDA9 /* zip.c */; };
+		373B46C75738AEC1B530CBF32C1706B0 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = F93371BCFC6F7AC0C89752E99B0C343C /* unzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		38A59AC65840CC9A7CAF5D5197D8064C /* Zip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EDA50A415DB1123D6505C99824991C5 /* Zip.framework */; };
-		48EC8A9314745620DA5EE31B8F5BCF69 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 82069918F3ABCA9B27253D2A3924D6A1 /* crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		494B00C77C453C85CA358FC11A4169FC /* Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C95F4CA81120872F4A3B2CF49FF88B /* Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48EC8A9314745620DA5EE31B8F5BCF69 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 75B5DDD68C50DA423D1B40FAE5390AEF /* crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		494B00C77C453C85CA358FC11A4169FC /* Header.h in Headers */ = {isa = PBXBuildFile; fileRef = AB45D2C8F71BD34906E40B769102CD14 /* Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4BE13197CB3320BA656ADA21175946BA /* Zip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88645B0CB7A6393F333237254D24B967 /* Zip.framework */; };
-		6A58FE40CD7FA006421F970249EBC755 /* iOSLogger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB6BBA5D5DB3636161F20EB318D270 /* iOSLogger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B14D7461BFF6654C630B949CE638A1E /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = BCD9CCAF8F283A25A7B2AD88E0E7E8D0 /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9CAC6C6ED33168278B8FC5D9DF0DE1F6 /* QuickZip.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F31827AE22F622839DE11DC51AC0CA /* QuickZip.swift */; };
-		A726A25219E61EA8EFA2EC57279D11AF /* Zip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EF0C1BCBF501914A2D52D9C8060BCF /* Zip-dummy.m */; };
-		AF447EF84F9852FFC104D6748387526B /* ZipUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED89A543D23917552C0DE171FD609F5 /* ZipUtilities.swift */; };
+		6A58FE40CD7FA006421F970249EBC755 /* iOSLogger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 26580A45A795903E27240B8DA9A649B5 /* iOSLogger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B14D7461BFF6654C630B949CE638A1E /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EAC7C5A50CAB6A8CE4AA14D66908D05 /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9CAC6C6ED33168278B8FC5D9DF0DE1F6 /* QuickZip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3A375FC62CD45C78E9120AFCE3EE5E /* QuickZip.swift */; };
+		A726A25219E61EA8EFA2EC57279D11AF /* Zip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA5909677A6245EB5781459CAD561E /* Zip-dummy.m */; };
+		AF447EF84F9852FFC104D6748387526B /* ZipUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3D3E640D9C6A79C01913CE8076B8E4 /* ZipUtilities.swift */; };
 		CA4075992A3507D0678F22066033F31B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB9B6CF81FC1E3635250A7D94C85B5F /* Foundation.framework */; };
-		CBEA6A8BF6B76875451A24CB69906491 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E32671C45F456CAD076FB9724C1E056 /* unzip.c */; };
+		CBEA6A8BF6B76875451A24CB69906491 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 91C8FA87F1D212BD069F6EB81200E3E2 /* unzip.c */; };
 		CBF0405019CC22C283E01F566BFEC3D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB9B6CF81FC1E3635250A7D94C85B5F /* Foundation.framework */; };
-		CC202E995149392675A760B617FFEE26 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 77822FA4DE935F7D1CCCC8B1FA8A408B /* ioapi.c */; };
+		CC202E995149392675A760B617FFEE26 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C8156F61FEA5C6DABB1A1EC34388363 /* ioapi.c */; };
 		DE3DD15C836F5B15EF91B681808D18F3 /* Pods-Demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1297CC1D72EFE436360CFBB898F8CB2E /* Pods-Demo-dummy.m */; };
 		DFFB57D748F67B9385B4D5F6E871391C /* Pods-Demo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 27BC0EBDAE14E89E57D584378BDA3116 /* Pods-Demo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E4DF185234F14744C3D099AC9FC37D78 /* iOSLogger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C580DB6ED3B9944FF0FE6EE2AE147897 /* iOSLogger-dummy.m */; };
-		EAD13FEF4444C54420BD4A9474A34B76 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = F458AA14B1D558B4F3B95CB5E6B57E88 /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EE9206C063E0CFF9B04A67941AD47BC6 /* Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B5745A152200EC23B756F61DE92B1D /* Zip.swift */; };
-		F21E25B6427A6E0125197973CD04019B /* Zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 72EB2BB0826FA8F192A6FB8AAE3AFC2A /* Zip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4DF185234F14744C3D099AC9FC37D78 /* iOSLogger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9E91CCDB72D583450CC0E1B67056FB /* iOSLogger-dummy.m */; };
+		EAD13FEF4444C54420BD4A9474A34B76 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B13DB072439FDF5128F8D544DE850AD /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EE9206C063E0CFF9B04A67941AD47BC6 /* Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0E85F4DEB9F4C652B7E69791951F81 /* Zip.swift */; };
+		F21E25B6427A6E0125197973CD04019B /* Zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 99B22C5171A45F58DFF85E51A343620C /* Zip.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F45318EBF337BD34F920A80F1003B9B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB9B6CF81FC1E3635250A7D94C85B5F /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,48 +58,51 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08B6AC8D4F9C426B53389F6AF77DBA5C /* iOSLogger.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = iOSLogger.modulemap; sourceTree = "<group>"; };
-		08C95F4CA81120872F4A3B2CF49FF88B /* Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Header.h; path = iOSLogger/Classes/Header.h; sourceTree = "<group>"; };
+		02CF5B4FE08B68D91EF52B324196AB69 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		0E3D3E640D9C6A79C01913CE8076B8E4 /* ZipUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZipUtilities.swift; path = Zip/ZipUtilities.swift; sourceTree = "<group>"; };
+		103A214BDBE738E03306B4E80DC65105 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		11AAD1D6E97AF187D50DCB4E4661FD5F /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Demo.framework; path = "Pods-Demo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1297CC1D72EFE436360CFBB898F8CB2E /* Pods-Demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Demo-dummy.m"; sourceTree = "<group>"; };
-		13E30AE87908D8D33930A556A410B6EE /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = Zip/minizip/unzip.h; sourceTree = "<group>"; };
-		16214F28196433C71ADF648C2776C474 /* IOSLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IOSLogger.swift; path = iOSLogger/Classes/IOSLogger.swift; sourceTree = "<group>"; };
-		17B5745A152200EC23B756F61DE92B1D /* Zip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Zip.swift; path = Zip/Zip.swift; sourceTree = "<group>"; };
-		18ACFC68CD36B7690A0D433DA7E0290B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1965FF76BB91163730C384D7B1E2C4FB /* Pods-Demo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Demo-frameworks.sh"; sourceTree = "<group>"; };
+		26580A45A795903E27240B8DA9A649B5 /* iOSLogger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOSLogger-umbrella.h"; sourceTree = "<group>"; };
 		275C17A46F39C36327493626A168B6D5 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		27BC0EBDAE14E89E57D584378BDA3116 /* Pods-Demo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Demo-umbrella.h"; sourceTree = "<group>"; };
+		281B80DB04F8E3C20B56299A7FC32180 /* Zip-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zip-umbrella.h"; sourceTree = "<group>"; };
 		282ECFCD0084F94EC1DED9401AAFE7F5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		29EF0C1BCBF501914A2D52D9C8060BCF /* Zip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Zip-dummy.m"; sourceTree = "<group>"; };
+		2C3A375FC62CD45C78E9120AFCE3EE5E /* QuickZip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickZip.swift; path = Zip/QuickZip.swift; sourceTree = "<group>"; };
+		2D71197D634B435FBFD55B3D279D55E4 /* iOSLogger-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOSLogger-prefix.pch"; sourceTree = "<group>"; };
 		2DCC0A90A3B960A36CE4B3156E13D9EA /* iOSLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = iOSLogger.framework; path = iOSLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2ED89A543D23917552C0DE171FD609F5 /* ZipUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZipUtilities.swift; path = Zip/ZipUtilities.swift; sourceTree = "<group>"; };
+		3C8156F61FEA5C6DABB1A1EC34388363 /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = Zip/minizip/ioapi.c; sourceTree = "<group>"; };
 		465C4E99072381F2F5EE6E5236B5E9D4 /* Zip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Zip.framework; path = Zip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		46EB6BBA5D5DB3636161F20EB318D270 /* iOSLogger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOSLogger-umbrella.h"; sourceTree = "<group>"; };
-		53FC4D6E7985019A91BF1A8619709F3F /* Zip-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zip-prefix.pch"; sourceTree = "<group>"; };
-		568E7227EAA2CEA2238B52E977D1C3B6 /* Zip.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Zip.xcconfig; sourceTree = "<group>"; };
-		592274EC6E216FB08AE4FE9C0964D68D /* iOSLogger.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iOSLogger.xcconfig; sourceTree = "<group>"; };
+		4CBA5909677A6245EB5781459CAD561E /* Zip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Zip-dummy.m"; sourceTree = "<group>"; };
+		55E74919E83D0986C3B87A5B92122310 /* iOSLogger.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iOSLogger.xcconfig; sourceTree = "<group>"; };
 		5EFCFC4782B9646B842EB839A267D7AA /* Pods-Demo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Demo-resources.sh"; sourceTree = "<group>"; };
-		72EB2BB0826FA8F192A6FB8AAE3AFC2A /* Zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Zip.h; path = Zip/Zip.h; sourceTree = "<group>"; };
-		77822FA4DE935F7D1CCCC8B1FA8A408B /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = Zip/minizip/ioapi.c; sourceTree = "<group>"; };
+		61D62AA3B7A92122BD10FC08B6FADDA9 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = Zip/minizip/zip.c; sourceTree = "<group>"; };
+		6C0E85F4DEB9F4C652B7E69791951F81 /* Zip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Zip.swift; path = Zip/Zip.swift; sourceTree = "<group>"; };
+		72D924478316BF5B99AC0D71E798AD1E /* IOSLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IOSLogger.swift; path = iOSLogger/Classes/IOSLogger.swift; sourceTree = "<group>"; };
+		75B5DDD68C50DA423D1B40FAE5390AEF /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = Zip/minizip/crypt.h; sourceTree = "<group>"; };
 		7A01701031823CCAC30B58767A21D8A4 /* Pods-Demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Demo.modulemap"; sourceTree = "<group>"; };
+		7B13DB072439FDF5128F8D544DE850AD /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = Zip/minizip/zip.h; sourceTree = "<group>"; };
+		7EAC7C5A50CAB6A8CE4AA14D66908D05 /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = Zip/minizip/ioapi.h; sourceTree = "<group>"; };
 		7EDA50A415DB1123D6505C99824991C5 /* Zip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Zip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		82069918F3ABCA9B27253D2A3924D6A1 /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = Zip/minizip/crypt.h; sourceTree = "<group>"; };
+		812F219E82D7813834B8CDC07AFC92E2 /* iOSLogger.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = iOSLogger.modulemap; sourceTree = "<group>"; };
 		88645B0CB7A6393F333237254D24B967 /* Zip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Zip.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Zip.framework; sourceTree = DEVELOPER_DIR; };
 		8AB9B6CF81FC1E3635250A7D94C85B5F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		8E32671C45F456CAD076FB9724C1E056 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = unzip.c; path = Zip/minizip/unzip.c; sourceTree = "<group>"; };
 		9154BF16DC759A1EDD6A1AB4E22AA07D /* Pods-Demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Demo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		91C8FA87F1D212BD069F6EB81200E3E2 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = unzip.c; path = Zip/minizip/unzip.c; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99B22C5171A45F58DFF85E51A343620C /* Zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Zip.h; path = Zip/Zip.h; sourceTree = "<group>"; };
+		9ECA36904BF20E6DBA229818F1A3F67E /* Zip.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Zip.xcconfig; sourceTree = "<group>"; };
 		A293EC6905CD2F770F31A1A57ACA0633 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
-		A5FC58924C3C05025E2E2CC5D37B3E00 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BB26915580996064DF5B9BB1520F9274 /* Zip-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zip-umbrella.h"; sourceTree = "<group>"; };
-		BCD9CCAF8F283A25A7B2AD88E0E7E8D0 /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = Zip/minizip/ioapi.h; sourceTree = "<group>"; };
-		C580DB6ED3B9944FF0FE6EE2AE147897 /* iOSLogger-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iOSLogger-dummy.m"; sourceTree = "<group>"; };
-		C9F31827AE22F622839DE11DC51AC0CA /* QuickZip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickZip.swift; path = Zip/QuickZip.swift; sourceTree = "<group>"; };
-		D03D8A83F562BCE892992D902F965D83 /* Zip.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Zip.modulemap; sourceTree = "<group>"; };
+		AB45D2C8F71BD34906E40B769102CD14 /* Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Header.h; path = iOSLogger/Classes/Header.h; sourceTree = "<group>"; };
+		ADAB72AEF3262808C6BC0DAD72997DF9 /* Zip.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Zip.modulemap; sourceTree = "<group>"; };
+		CC9CE18C797D69AF31048B6E586E291D /* Zip-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zip-prefix.pch"; sourceTree = "<group>"; };
+		D83B7FE34FFE63A09B1BDA28D0EAFE53 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF9E91CCDB72D583450CC0E1B67056FB /* iOSLogger-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iOSLogger-dummy.m"; sourceTree = "<group>"; };
 		EB2BD00EE3F4FBA187EE15A5C9968F90 /* Pods-Demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Demo-acknowledgements.plist"; sourceTree = "<group>"; };
-		F2226005A5E6FB000B9B31AB7AA7537D /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = Zip/minizip/zip.c; sourceTree = "<group>"; };
-		F458AA14B1D558B4F3B95CB5E6B57E88 /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = Zip/minizip/zip.h; sourceTree = "<group>"; };
-		FE6B70F67F35113FD61533654B67E512 /* iOSLogger-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOSLogger-prefix.pch"; sourceTree = "<group>"; };
+		F353A00099A8B506AB28006147A71F92 /* iOSLogger.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = iOSLogger.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F93371BCFC6F7AC0C89752E99B0C343C /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = Zip/minizip/unzip.h; sourceTree = "<group>"; };
+		FA2E05FFDE413CAE08A115F44863FABC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08FF259541DAA4926CDBA483AFDA47A5 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2EDABB0FAF7358A5FB82C281950AC80D /* iOSLogger */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		11F2823968A7FF4AC8D81C619B2D893A /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,14 +152,17 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		1A8C4C88F00924E90C15516BB6088389 /* Pods */ = {
+		2EDABB0FAF7358A5FB82C281950AC80D /* iOSLogger */ = {
 			isa = PBXGroup;
 			children = (
-				96B1AEBCE2F23D9C4ED1CDB8C985804C /* iOSLogger */,
-				D1A483B3452137A557E5F036D4D8A99B /* Zip */,
+				AB45D2C8F71BD34906E40B769102CD14 /* Header.h */,
+				72D924478316BF5B99AC0D71E798AD1E /* IOSLogger.swift */,
+				E33E3BEE1AEDC6FFF8172A5437556C25 /* Pod */,
+				3BE132D3ED22B46E39D63153690D065D /* Support Files */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
+			name = iOSLogger;
+			path = /Users/mac/git/iOSLogger;
+			sourceTree = "<absolute>";
 		};
 		3AA45FA345F104047C407AF1A96BCA1A /* Products */ = {
 			isa = PBXGroup;
@@ -158,6 +172,20 @@
 				465C4E99072381F2F5EE6E5236B5E9D4 /* Zip.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		3BE132D3ED22B46E39D63153690D065D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA2E05FFDE413CAE08A115F44863FABC /* Info.plist */,
+				812F219E82D7813834B8CDC07AFC92E2 /* iOSLogger.modulemap */,
+				55E74919E83D0986C3B87A5B92122310 /* iOSLogger.xcconfig */,
+				DF9E91CCDB72D583450CC0E1B67056FB /* iOSLogger-dummy.m */,
+				2D71197D634B435FBFD55B3D279D55E4 /* iOSLogger-prefix.pch */,
+				26580A45A795903E27240B8DA9A649B5 /* iOSLogger-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Demo/Pods/Target Support Files/iOSLogger";
 			sourceTree = "<group>";
 		};
 		6F2351C272926D3E0225FEFC2F9C5D1F /* Targets Support Files */ = {
@@ -172,36 +200,26 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				08FF259541DAA4926CDBA483AFDA47A5 /* Development Pods */,
 				DFBEF259F82771421E18C56F3A269953 /* Frameworks */,
-				1A8C4C88F00924E90C15516BB6088389 /* Pods */,
+				E104CD8A37556B4A21987E8A7CA5A000 /* Pods */,
 				3AA45FA345F104047C407AF1A96BCA1A /* Products */,
 				6F2351C272926D3E0225FEFC2F9C5D1F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		86E3EB38E5D58DB82EA574151C396635 /* Support Files */ = {
+		B3E6F71E572ED4594EBD07CBA5A1DD1E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A5FC58924C3C05025E2E2CC5D37B3E00 /* Info.plist */,
-				08B6AC8D4F9C426B53389F6AF77DBA5C /* iOSLogger.modulemap */,
-				592274EC6E216FB08AE4FE9C0964D68D /* iOSLogger.xcconfig */,
-				C580DB6ED3B9944FF0FE6EE2AE147897 /* iOSLogger-dummy.m */,
-				FE6B70F67F35113FD61533654B67E512 /* iOSLogger-prefix.pch */,
-				46EB6BBA5D5DB3636161F20EB318D270 /* iOSLogger-umbrella.h */,
+				D83B7FE34FFE63A09B1BDA28D0EAFE53 /* Info.plist */,
+				ADAB72AEF3262808C6BC0DAD72997DF9 /* Zip.modulemap */,
+				9ECA36904BF20E6DBA229818F1A3F67E /* Zip.xcconfig */,
+				4CBA5909677A6245EB5781459CAD561E /* Zip-dummy.m */,
+				CC9CE18C797D69AF31048B6E586E291D /* Zip-prefix.pch */,
+				281B80DB04F8E3C20B56299A7FC32180 /* Zip-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/iOSLogger";
-			sourceTree = "<group>";
-		};
-		96B1AEBCE2F23D9C4ED1CDB8C985804C /* iOSLogger */ = {
-			isa = PBXGroup;
-			children = (
-				08C95F4CA81120872F4A3B2CF49FF88B /* Header.h */,
-				16214F28196433C71ADF648C2776C474 /* IOSLogger.swift */,
-				86E3EB38E5D58DB82EA574151C396635 /* Support Files */,
-			);
-			name = iOSLogger;
-			path = iOSLogger;
+			path = "../Target Support Files/Zip";
 			sourceTree = "<group>";
 		};
 		CF58A9AAA805FDF37F67723722F14D8F /* Pods-Demo */ = {
@@ -222,40 +240,6 @@
 			path = "Target Support Files/Pods-Demo";
 			sourceTree = "<group>";
 		};
-		D1A483B3452137A557E5F036D4D8A99B /* Zip */ = {
-			isa = PBXGroup;
-			children = (
-				82069918F3ABCA9B27253D2A3924D6A1 /* crypt.h */,
-				77822FA4DE935F7D1CCCC8B1FA8A408B /* ioapi.c */,
-				BCD9CCAF8F283A25A7B2AD88E0E7E8D0 /* ioapi.h */,
-				C9F31827AE22F622839DE11DC51AC0CA /* QuickZip.swift */,
-				8E32671C45F456CAD076FB9724C1E056 /* unzip.c */,
-				13E30AE87908D8D33930A556A410B6EE /* unzip.h */,
-				F2226005A5E6FB000B9B31AB7AA7537D /* zip.c */,
-				F458AA14B1D558B4F3B95CB5E6B57E88 /* zip.h */,
-				72EB2BB0826FA8F192A6FB8AAE3AFC2A /* Zip.h */,
-				17B5745A152200EC23B756F61DE92B1D /* Zip.swift */,
-				2ED89A543D23917552C0DE171FD609F5 /* ZipUtilities.swift */,
-				D5A4DA76BF59AD519273E508E1EBD162 /* Support Files */,
-			);
-			name = Zip;
-			path = Zip;
-			sourceTree = "<group>";
-		};
-		D5A4DA76BF59AD519273E508E1EBD162 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				18ACFC68CD36B7690A0D433DA7E0290B /* Info.plist */,
-				D03D8A83F562BCE892992D902F965D83 /* Zip.modulemap */,
-				568E7227EAA2CEA2238B52E977D1C3B6 /* Zip.xcconfig */,
-				29EF0C1BCBF501914A2D52D9C8060BCF /* Zip-dummy.m */,
-				53FC4D6E7985019A91BF1A8619709F3F /* Zip-prefix.pch */,
-				BB26915580996064DF5B9BB1520F9274 /* Zip-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Zip";
-			sourceTree = "<group>";
-		};
 		DFBEF259F82771421E18C56F3A269953 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -263,6 +247,44 @@
 				11F2823968A7FF4AC8D81C619B2D893A /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E104CD8A37556B4A21987E8A7CA5A000 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6B4247B49DF5C283445C0E26BFD1D86 /* Zip */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E33E3BEE1AEDC6FFF8172A5437556C25 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F353A00099A8B506AB28006147A71F92 /* iOSLogger.podspec */,
+				02CF5B4FE08B68D91EF52B324196AB69 /* LICENSE */,
+				103A214BDBE738E03306B4E80DC65105 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		E6B4247B49DF5C283445C0E26BFD1D86 /* Zip */ = {
+			isa = PBXGroup;
+			children = (
+				75B5DDD68C50DA423D1B40FAE5390AEF /* crypt.h */,
+				3C8156F61FEA5C6DABB1A1EC34388363 /* ioapi.c */,
+				7EAC7C5A50CAB6A8CE4AA14D66908D05 /* ioapi.h */,
+				2C3A375FC62CD45C78E9120AFCE3EE5E /* QuickZip.swift */,
+				91C8FA87F1D212BD069F6EB81200E3E2 /* unzip.c */,
+				F93371BCFC6F7AC0C89752E99B0C343C /* unzip.h */,
+				61D62AA3B7A92122BD10FC08B6FADDA9 /* zip.c */,
+				7B13DB072439FDF5128F8D544DE850AD /* zip.h */,
+				99B22C5171A45F58DFF85E51A343620C /* Zip.h */,
+				6C0E85F4DEB9F4C652B7E69791951F81 /* Zip.swift */,
+				0E3D3E640D9C6A79C01913CE8076B8E4 /* ZipUtilities.swift */,
+				B3E6F71E572ED4594EBD07CBA5A1DD1E /* Support Files */,
+			);
+			name = Zip;
+			path = Zip;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -477,7 +499,7 @@
 		};
 		5F87ACAA90D00DC6D125B488114DE0C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 592274EC6E216FB08AE4FE9C0964D68D /* iOSLogger.xcconfig */;
+			baseConfigurationReference = 55E74919E83D0986C3B87A5B92122310 /* iOSLogger.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -545,7 +567,7 @@
 		};
 		A4F09A1167B153CE47E55B463295E3B2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 568E7227EAA2CEA2238B52E977D1C3B6 /* Zip.xcconfig */;
+			baseConfigurationReference = 9ECA36904BF20E6DBA229818F1A3F67E /* Zip.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -578,7 +600,7 @@
 		};
 		B615C79F74FCB64C69CEDC61490C53EB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 568E7227EAA2CEA2238B52E977D1C3B6 /* Zip.xcconfig */;
+			baseConfigurationReference = 9ECA36904BF20E6DBA229818F1A3F67E /* Zip.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -731,7 +753,7 @@
 		};
 		FCA15CCCCD7D1DF1421028038991B9FD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 592274EC6E216FB08AE4FE9C0964D68D /* iOSLogger.xcconfig */;
+			baseConfigurationReference = 55E74919E83D0986C3B87A5B92122310 /* iOSLogger.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

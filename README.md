@@ -23,7 +23,7 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 use_frameworks!
-pod 'iOSLogger', :git => 'https://github.com/pavel-zlotarenchuk/iOSLogger.git'
+pod 'iOSLogger'
 ```
 And run  `pod install`
 
@@ -36,8 +36,7 @@ import iOSLogger
 In AppDelegat use:
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    IOSLogger.appName = "NameYouApp"
-    IOSLogger.authorEmail = "youemail@gmail.com"
+    IOSLogger.myInit(appName: "NameYouApp", authorEmail: "youemail@gmail.com")
     return true
 }
 ```
