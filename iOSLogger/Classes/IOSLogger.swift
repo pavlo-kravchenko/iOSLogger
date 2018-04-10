@@ -17,7 +17,6 @@ public class IOSLogger : NSObject{
     
     public static let instance = IOSLogger()
     
-    var appName: String = ""
     var authorEmail: String = ""
     var sizeFile: Int = 0
     var countFiles: Int = 0
@@ -35,10 +34,7 @@ public class IOSLogger : NSObject{
         instance.sizeFile = 1024 * 1024 * 5
         instance.countFiles = 10
         
-        if let url = instance.getUrlFile(index: instance.idFile) {
-            instance.logFileURL = url
-            print("iOSLogger: Logger is active")
-        }
+        instance.activateLogger()
     }
     
     public static func myInit(authorEmail : String, sizeInMB : Int, countFiles : Int){
@@ -46,8 +42,12 @@ public class IOSLogger : NSObject{
         instance.sizeFile = 1024 * 1024 * sizeInMB
         instance.countFiles = countFiles
         
-        if let url = instance.getUrlFile(index: instance.idFile) {
-            instance.logFileURL = url
+        instance.activateLogger()
+    }
+    
+    func activateLogger(){
+        if let url = getUrlFile(index: idFile) {
+            logFileURL = url
             print("iOSLogger: Logger is active")
         }
     }
@@ -91,7 +91,7 @@ public class IOSLogger : NSObject{
                         }
                     #endif
                 } else {
-               if (getSizeFile(path: url) >= sizeFile){
+                    if (getSizeFile(path: url) >= sizeFile){
                         var i = countFiles
                         while i >= 1  {
                             if let urlPrevious = getUrlFile(index: i - 1) {
@@ -146,12 +146,15 @@ public class IOSLogger : NSObject{
             
             mail.setSubject("\(appName ?? "appName") \(version ?? "1.0")(\(build ?? "1.0"))")
             
-            var attachmentData = Data()
-            attachmentData.append(instance.getLogFileData())
-            
-            let logFileName = "\(instance.appName) \(version ?? "1.0")(\(build ?? "1.0")).zip"
-            
-            mail.addAttachmentData(attachmentData, mimeType: "text/plain", fileName: logFileName)
+            for url in instance.getUrlList() {
+                print(url.path)
+                print(url.lastPathComponent)
+                
+                var attachmentData = Data()
+                attachmentData.append(instance.getLogFileData(fileUrl: url))
+                let logFileName = "\(url.lastPathComponent).zip"
+                mail.addAttachmentData(attachmentData, mimeType: "text/plain", fileName: logFileName)
+            }
             
             viewController.present(mail, animated: true)
         } else {
@@ -187,9 +190,9 @@ public class IOSLogger : NSObject{
         }
     }
     
-    func getLogFileData() -> Data {
+    func getLogFileData(fileUrl : URL) -> Data {
         IOSLogger.i(textLog: "Zipping file logs")
-        let zipFilePath = try? Zip.quickZipFiles([logFileURL!], fileName: appName)
+        let zipFilePath = try? Zip.quickZipFiles([fileUrl], fileName: fileUrl.lastPathComponent)
         let logFileData = try? Data(contentsOf: zipFilePath!, options: .dataReadingMapped)
         return logFileData!
     }
@@ -205,6 +208,19 @@ public class IOSLogger : NSObject{
         return fileSize
     }
     
+    func getUrlList() -> [URL]{
+        var fileUrlList = [URL]()
+        var i = 0
+        while i < countFiles  {
+            if let url = getUrlFile(index: i) {
+                if fileManager.fileExists(atPath: url.path){
+                    fileUrlList.append(url)
+                }
+            }
+            i += 1
+        }
+        return fileUrlList as! [URL]
+    }
 }
 
 extension IOSLogger : MFMailComposeViewControllerDelegate{
