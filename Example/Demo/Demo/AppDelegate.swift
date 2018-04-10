@@ -14,10 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
-    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        IOSLogger.myInit(appName: "Example", authorEmail: "exampleemail@gmail.com")
+        IOSLogger.myInit(authorEmail: "exampleemail@gmail.com")
         return true
     }
 
