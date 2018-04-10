@@ -219,7 +219,7 @@ public class IOSLogger : NSObject{
             }
             i += 1
         }
-        return fileUrlList as! [URL]
+        return fileUrlList as [URL]
     }
 }
 
