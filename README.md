@@ -36,7 +36,7 @@ import iOSLogger
 In AppDelegat use:
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    IOSLogger.myInit(appName: "NameYouApp", authorEmail: "youemail@gmail.com")
+    IOSLogger.myInit(authorEmail: "exampleemail@gmail.com")
     return true
 }
 ```
