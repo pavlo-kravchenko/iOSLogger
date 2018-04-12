@@ -1,7 +1,6 @@
 
 //
 //  iOSLogger.swift
-//  iOSTestTasck
 //
 //  Created by Kravchenko Pavel on 3/30/18.
 //  Copyright © 2018 Mac. All rights reserved.
@@ -18,8 +17,8 @@ public class IOSLogger : NSObject{
     public static let instance = IOSLogger()
     
     var authorEmail: String = ""
-    var sizeFile: Int = 0
-    var countFiles: Int = 0
+    var sizeFile: Int = 1024 * 1024 * 5
+    var countFiles: Int = 10
     var idFile: Int = 0
     var logFileURL: URL?
     let fileManager = FileManager.default
@@ -31,15 +30,13 @@ public class IOSLogger : NSObject{
     
     public static func myInit(authorEmail : String){
         instance.authorEmail = authorEmail
-        instance.sizeFile = 1024 * 1024 * 5
-        instance.countFiles = 10
-        
+    
         instance.activateLogger()
     }
     
-    public static func myInit(authorEmail : String, sizeInMB : Int, countFiles : Int){
+    public static func myInit(authorEmail : String, sizeFileInMB : Int, countFiles : Int){
         instance.authorEmail = authorEmail
-        instance.sizeFile = 1024 * 1024 * sizeInMB
+        instance.sizeFile = 1024 * 1024 * sizeFileInMB
         instance.countFiles = countFiles
         
         instance.activateLogger()
