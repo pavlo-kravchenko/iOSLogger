@@ -156,6 +156,12 @@ public class IOSLogger : NSObject{
             viewController.present(mail, animated: true)
         } else {
             print("MailComposerError")
+            let alert = UIAlertController.init(title: "Mail export error", message: "Some error occurred. Check your internet connection and use iOS mail client", preferredStyle: .alert)
+            alert.addAction(UIAlertAction.init(title: "Try again", style: .default, handler: { (action) in
+                self.sendLogs(viewController: viewController)
+            }))
+            alert.addAction(UIAlertAction.init(title: "Cancel", style: .cancel, handler: nil))
+            viewController.present(alert, animated: true, completion: nil)
         }
     }
     
