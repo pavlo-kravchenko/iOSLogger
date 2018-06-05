@@ -1,20 +1,20 @@
 PODS:
-  - iOSLogger (0.1.0):
+  - iOSLogger (0.1.4):
     - Zip (~> 1.1)
   - Zip (1.1.0)
 
 DEPENDENCIES:
   - iOSLogger (from `../`)
-  - Zip
+  - Zip (~> 1.1)
 
 EXTERNAL SOURCES:
   iOSLogger:
     :path: ../
 
 SPEC CHECKSUMS:
-  iOSLogger: 0422de37aff7a4192c46ee38d2b87ba5b99173f5
+  iOSLogger: 8ea5753efdda61d65560293c4fc821ba8d9fc064
   Zip: 8877eede3dda76bcac281225c20e71c25270774c
 
-PODFILE CHECKSUM: 08c3585de4271748d95de80b9ffb468492963379
+PODFILE CHECKSUM: 1d0834eace6053ed67b1f43346ff332f58893324
 
 COCOAPODS: 1.4.0

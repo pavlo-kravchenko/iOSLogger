@@ -29,7 +29,7 @@ SOFTWARE.
 
 ## iOSLogger
 
-Copyright (c) 2018 pavel-zlotarenchuk <pavel.zlotarenchuk@gmail.com>
+Copyright (c) 2018 viktord1985 GreenMoby
 
 Apache License
 Version 2.0, January 2004
