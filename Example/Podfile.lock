@@ -7,9 +7,13 @@ DEPENDENCIES:
   - iOSLogger (from `../`)
   - Zip (~> 1.1)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Zip
+
 EXTERNAL SOURCES:
   iOSLogger:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   iOSLogger: 8ea5753efdda61d65560293c4fc821ba8d9fc064
@@ -17,4 +21,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 1d0834eace6053ed67b1f43346ff332f58893324
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3

@@ -418,7 +418,6 @@
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
 				583680EC39B8601CB16FC091 /* [CP] Embed Pods Frameworks */,
-				72659636CB2D4D8095ACA4E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -558,21 +557,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLogger_Tests/Pods-iOSLogger_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		72659636CB2D4D8095ACA4E7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLogger_Tests/Pods-iOSLogger_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AE6B82BDD5B82A3FB5AAB6B7 /* [CP] Check Pods Manifest.lock */ = {
