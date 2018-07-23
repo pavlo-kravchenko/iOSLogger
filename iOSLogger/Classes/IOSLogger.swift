@@ -4,7 +4,6 @@
 //
 //  Created by Kravchenko Pavel on 3/30/18.
 //  Copyright © 2018 Mac. All rights reserved.
-//
 
 import Foundation
 import UIKit
@@ -30,7 +29,6 @@ public class IOSLogger : NSObject{
     
     public static func myInit(authorEmail : String){
         instance.authorEmail = authorEmail
-    
         instance.activateLogger()
     }
     
@@ -74,10 +72,10 @@ public class IOSLogger : NSObject{
     }
     
     func saveToFile(stringLog : String) {
+        let line = "\(getTime()) \(stringLog)\n"
         if let url = logFileURL {
             do {
                 if fileManager.fileExists(atPath: url.path) == false {
-                    let line = stringLog + "\n"
                     try line.write(to: url, atomically: true, encoding: .utf8)
                     
                     #if os(iOS) || os(watchOS)
@@ -103,11 +101,10 @@ public class IOSLogger : NSObject{
                             }
                             i -= 1
                         }
-                        let line = stringLog + "\n"
                         try line.write(to: url, atomically: true, encoding: .utf8)
                         fileHandle = try FileHandle(forWritingTo: url as URL)
                     } else {
-                        writeLog(path: url, log: stringLog)
+                        writeLog(path: url, log: line)
                     }
                 }
             } catch let error{
@@ -115,7 +112,14 @@ public class IOSLogger : NSObject{
                 print("File Destination could not write to file \(url).")
             }
         }
-        print(stringLog)
+        print(line)
+    }
+    
+    func getTime() -> String {
+        let date = Date()
+        let dateFormatter : DateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MMM-dd HH:mm:ss"
+        return dateFormatter.string(from: date)
     }
     
     public static func readLogs() {
@@ -231,4 +235,3 @@ extension IOSLogger : MFMailComposeViewControllerDelegate{
         controller.dismiss(animated: true, completion: nil)
     }
 }
-
