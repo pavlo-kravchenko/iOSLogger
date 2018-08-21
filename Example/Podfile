@@ -2,6 +2,6 @@ use_frameworks!
 target 'iOSLogger_Tests' do
     pod 'iOSLogger', :path => '../'
   
-  pod 'Zip', '~> 1.1'
+    pod 'Zip', '1.1'
   
 end

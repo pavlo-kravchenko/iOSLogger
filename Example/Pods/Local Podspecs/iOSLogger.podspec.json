@@ -1,6 +1,6 @@
 {
   "name": "iOSLogger",
-  "version": "0.1.4",
+  "version": "0.1.7",
   "summary": "Easy logging and send logs for your app.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/pavel-zlotarenchuk/iOSLogger",
@@ -13,17 +13,11 @@
   },
   "source": {
     "git": "https://github.com/pavel-zlotarenchuk/iOSLogger.git",
-    "tag": "0.1.4"
+    "tag": "0.1.7"
   },
   "platforms": {
     "ios": "9.0"
   },
   "source_files": "iOSLogger/Classes/**/*",
-  "swift_version": "4.0",
-  "frameworks": "Zip",
-  "dependencies": {
-    "Zip": [
-      "~> 1.1"
-    ]
-  }
+  "swift_version": "4.0"
 }

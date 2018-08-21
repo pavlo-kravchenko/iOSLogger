@@ -27,11 +27,21 @@ public class IOSLogger : NSObject{
         super.init()
     }
     
+    /**
+     - Parameters:
+     - authorEmail: email for get logs
+     */
     public static func myInit(authorEmail : String){
         instance.authorEmail = authorEmail
         instance.activateLogger()
     }
     
+    /**
+     - Parameters:
+     - authorEmail: email for get logs
+     - sizeFileInMB: size one file log in MB (defoult 5)
+     - countFiles: amount files with logs (defoult 10)
+     */
     public static func myInit(authorEmail : String, sizeFileInMB : Int, countFiles : Int){
         instance.authorEmail = authorEmail
         instance.sizeFile = 1024 * 1024 * sizeFileInMB
@@ -43,47 +53,102 @@ public class IOSLogger : NSObject{
     func activateLogger(){
         if let url = getUrlFile(index: idFile) {
             logFileURL = url
-            print("iOSLogger: Logger is active")
+            printLog("iOSLogger: Logger is active")
         }
     }
     
-    public static func log (with tag : String, textLog : String){
-        instance.saveToFile(stringLog: "\(tag): \(textLog)")
+    /**
+     - Parameters:
+     - tag: add your tag here
+     - textLog: here we pass the text of the log
+     */
+    public static func log (with tag : String, textLog : String,
+                            file: String = #file, line: Int = #line){
+        if textLog == "" || tag == "" {return}
+        instance.saveToFile(stringLog: instance.constructorString(
+            string: "\(tag): \(textLog)", file: file, line: line))
     }
     
-    public static func v (textLog : String){
-        instance.saveToFile(stringLog: "Verbose: \(textLog)")
+    /**
+     - Parameters:
+     - textLog: here we pass the text of the log for level *verbose*
+     */
+    public static func v (textLog : String, file: String = #file, line: Int = #line){
+        if textLog == "" {return}
+        instance.saveToFile(stringLog: instance.constructorString(
+            string: "Verbose: \(textLog)", file: file, line: line))
     }
     
-    public static func d (textLog : String){
-        instance.saveToFile(stringLog: "Debug: \(textLog)")
+    /**
+     - Parameters:
+     - textLog: here we pass the text of the log for level *debug*
+     */
+    public static func d (textLog : String, file: String = #file, line: Int = #line){
+        if textLog == "" {return}
+        instance.saveToFile(stringLog: instance.constructorString(
+            string: "Debug: \(textLog)", file: file, line: line))
     }
     
-    public static func i (textLog : String){
-        instance.saveToFile(stringLog: "Info: \(textLog)")
+    /**
+     - Parameters:
+     - textLog: here we pass the text of the log for level *info*
+     */
+    public static func i (textLog : String, file: String = #file, line: Int = #line){
+        if textLog == "" {return}
+        instance.saveToFile(stringLog: instance.constructorString(
+            string: "Info: \(textLog)", file: file, line: line))
     }
     
-    public static func w (textLog : String){
-        instance.saveToFile(stringLog: "Warn: \(textLog)")
+    /**
+     - Parameters:
+     - textLog: here we pass the text of the log for level *warning*
+     */
+    public static func w (textLog : String, file: String = #file, line: Int = #line){
+        if textLog == "" {return}
+        instance.saveToFile(stringLog: instance.constructorString(
+            string: "Warn: \(textLog)", file: file, line: line))
     }
     
-    public static func e (textLog : String){
-        instance.saveToFile(stringLog: "Error: \(textLog)")
+    /**
+     - Parameters:
+     - textLog: here we pass the text of the log for level *error*
+     */
+    public static func e (textLog : String, file: String = #file, line: Int = #line){
+        if textLog == "" {return}
+        instance.saveToFile(stringLog: instance.constructorString(
+            string: "Error: \(textLog)", file: file, line: line))
+    }
+    
+    private func constructorString(string : String, file: String, line: Int) -> String{
+        let fileName = getFileName(filePath: file)
+        let resultString = "\(fileName) : \(line) \n\(string)"
+        return resultString
+    }
+    
+    private func getFileName (filePath: String) -> String{
+        let url = URL(fileURLWithPath: filePath)
+        return url.lastPathComponent
+    }
+    
+    func printLog(_ textLog : Any){
+        #if DEBUG
+        print(textLog as! String)
+        #endif
     }
     
     func saveToFile(stringLog : String) {
-        let line = "\(getTime()) \(stringLog)\n"
+        let line = "\(getTime()) \(stringLog)"
         if let url = logFileURL {
             do {
                 if fileManager.fileExists(atPath: url.path) == false {
                     try line.write(to: url, atomically: true, encoding: .utf8)
                     
                     #if os(iOS) || os(watchOS)
-                        if #available(iOS 10.0, watchOS 3.0, *) {
-                            var attributes = try fileManager.attributesOfItem(atPath: url.path)
-                            attributes[FileAttributeKey.protectionKey] = FileProtectionType.none
-                            try fileManager.setAttributes(attributes, ofItemAtPath: url.path)
-                        }
+                    if #available(iOS 10.0, watchOS 3.0, *) {
+                        var attributes = try fileManager.attributesOfItem(atPath: url.path)
+                        attributes[FileAttributeKey.protectionKey] = FileProtectionType.none
+                        try fileManager.setAttributes(attributes, ofItemAtPath: url.path)
+                    }
                     #endif
                 } else {
                     if (getSizeFile(path: url) >= sizeFile){
@@ -108,11 +173,11 @@ public class IOSLogger : NSObject{
                     }
                 }
             } catch let error{
-                print(error)
-                print("File Destination could not write to file \(url).")
+                printLog(error)
+                printLog("File Destination could not write to file \(url).")
             }
         }
-        print(line)
+        printLog(line)
     }
     
     func getTime() -> String {
@@ -128,9 +193,9 @@ public class IOSLogger : NSObject{
             do {
                 inString = try String(contentsOf: url)
             } catch {
-                print("Failed reading from URL: \(url), Error: " + error.localizedDescription)
+                instance.printLog("Failed reading from URL: \(url), Error: " + error.localizedDescription)
             }
-            print(inString)
+            instance.printLog(inString)
         }
     }
     
@@ -148,8 +213,8 @@ public class IOSLogger : NSObject{
             mail.setSubject("\(appName ?? "appName") \(version ?? "1.0")(\(build ?? "1.0"))")
             
             for url in instance.getUrlList() {
-                print(url.path)
-                print(url.lastPathComponent)
+                instance.printLog(url.path)
+                instance.printLog(url.lastPathComponent)
                 
                 var attachmentData = Data()
                 attachmentData.append(instance.getLogFileData(fileUrl: url))
@@ -159,7 +224,7 @@ public class IOSLogger : NSObject{
             
             viewController.present(mail, animated: true)
         } else {
-            print("MailComposerError")
+            instance.printLog("MailComposerError")
             let alert = UIAlertController.init(title: "Mail export error", message: "Some error occurred. Check your internet connection and use iOS mail client", preferredStyle: .alert)
             alert.addAction(UIAlertAction.init(title: "Try again", style: .default, handler: { (action) in
                 self.sendLogs(viewController: viewController)
@@ -175,7 +240,7 @@ public class IOSLogger : NSObject{
         if let url = dir?.appendingPathComponent(fileName).appendingPathExtension("txt") {
             return url
         } else {
-            print("iOSLogger: Error! url incorrectly")
+            printLog("iOSLogger: Error! url incorrectly")
             return nil
         }
     }
@@ -193,7 +258,7 @@ public class IOSLogger : NSObject{
                 }
             }
         } catch {
-            print("File Destination could not write to file \(path).")
+            printLog("File Destination could not write to file \(path).")
         }
     }
     
@@ -210,7 +275,7 @@ public class IOSLogger : NSObject{
             let resources = try path.resourceValues(forKeys:[.fileSizeKey])
             fileSize = resources.fileSize!
         } catch {
-            print("Could not find file size \(path).")
+            printLog("Could not find file size \(path).")
         }
         return fileSize
     }

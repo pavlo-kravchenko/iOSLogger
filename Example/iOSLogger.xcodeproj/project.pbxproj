@@ -16,9 +16,6 @@
 		04925D6320765634003A0E5B /* Demo.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = 04925D1520765634003A0E5B /* Demo.xcworkspace */; };
 		04925D6420765634003A0E5B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 04925D1620765634003A0E5B /* Podfile */; };
 		04925D6520765634003A0E5B /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 04925D1720765634003A0E5B /* Podfile.lock */; };
-		04925D6620765634003A0E5B /* IOSLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04925D1E20765634003A0E5B /* IOSLogger.swift */; };
-		04925D6720765634003A0E5B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 04925D1F20765634003A0E5B /* LICENSE */; };
-		04925D6820765634003A0E5B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 04925D2020765634003A0E5B /* README.md */; };
 		04925D6920765634003A0E5B /* Manifest.lock in Resources */ = {isa = PBXBuildFile; fileRef = 04925D2220765634003A0E5B /* Manifest.lock */; };
 		04925D6A20765634003A0E5B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04925D2820765634003A0E5B /* Info.plist */; };
 		04925D6B20765634003A0E5B /* iOSLogger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04925D2920765634003A0E5B /* iOSLogger-dummy.m */; };
@@ -34,14 +31,6 @@
 		04925D7520765634003A0E5B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04925D3A20765634003A0E5B /* Info.plist */; };
 		04925D7620765634003A0E5B /* Zip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04925D3B20765634003A0E5B /* Zip-dummy.m */; };
 		04925D7720765634003A0E5B /* Zip.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 04925D3F20765634003A0E5B /* Zip.xcconfig */; };
-		04925D7820765634003A0E5B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 04925D4120765634003A0E5B /* LICENSE */; };
-		04925D7920765634003A0E5B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 04925D4220765634003A0E5B /* README.md */; };
-		04925D7A20765634003A0E5B /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 04925D4620765634003A0E5B /* ioapi.c */; };
-		04925D7B20765634003A0E5B /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 04925D4920765634003A0E5B /* unzip.c */; };
-		04925D7C20765634003A0E5B /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 04925D4B20765634003A0E5B /* zip.c */; };
-		04925D7D20765634003A0E5B /* QuickZip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04925D4D20765634003A0E5B /* QuickZip.swift */; };
-		04925D7E20765634003A0E5B /* Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04925D4F20765634003A0E5B /* Zip.swift */; };
-		04925D7F20765634003A0E5B /* ZipUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04925D5020765634003A0E5B /* ZipUtilities.swift */; };
 		12A9A5F237C331E62F37233E /* Pods_iOSLogger_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E60B7D27BF9C09E74CE41AE /* Pods_iOSLogger_Tests.framework */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 /* End PBXBuildFile section */
@@ -68,13 +57,6 @@
 			remoteGlobalIDString = 11AAD1D6E97AF187D50DCB4E4661FD5F;
 			remoteInfo = "Pods-Demo";
 		};
-		04925D5B20765634003A0E5B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 04925D2320765634003A0E5B /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 465C4E99072381F2F5EE6E5236B5E9D4;
-			remoteInfo = Zip;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -88,10 +70,6 @@
 		04925D1520765634003A0E5B /* Demo.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = Demo.xcworkspace; sourceTree = "<group>"; };
 		04925D1620765634003A0E5B /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		04925D1720765634003A0E5B /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
-		04925D1D20765634003A0E5B /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
-		04925D1E20765634003A0E5B /* IOSLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IOSLogger.swift; sourceTree = "<group>"; };
-		04925D1F20765634003A0E5B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		04925D2020765634003A0E5B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		04925D2220765634003A0E5B /* Manifest.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Manifest.lock; sourceTree = "<group>"; };
 		04925D2320765634003A0E5B /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Pods.xcodeproj; sourceTree = "<group>"; };
 		04925D2820765634003A0E5B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -116,20 +94,6 @@
 		04925D3D20765634003A0E5B /* Zip-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Zip-umbrella.h"; sourceTree = "<group>"; };
 		04925D3E20765634003A0E5B /* Zip.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = Zip.modulemap; sourceTree = "<group>"; };
 		04925D3F20765634003A0E5B /* Zip.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Zip.xcconfig; sourceTree = "<group>"; };
-		04925D4120765634003A0E5B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		04925D4220765634003A0E5B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		04925D4520765634003A0E5B /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
-		04925D4620765634003A0E5B /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
-		04925D4720765634003A0E5B /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
-		04925D4820765634003A0E5B /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
-		04925D4920765634003A0E5B /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
-		04925D4A20765634003A0E5B /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
-		04925D4B20765634003A0E5B /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
-		04925D4C20765634003A0E5B /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
-		04925D4D20765634003A0E5B /* QuickZip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickZip.swift; sourceTree = "<group>"; };
-		04925D4E20765634003A0E5B /* Zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Zip.h; sourceTree = "<group>"; };
-		04925D4F20765634003A0E5B /* Zip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zip.swift; sourceTree = "<group>"; };
-		04925D5020765634003A0E5B /* ZipUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipUtilities.swift; sourceTree = "<group>"; };
 		27AEB46E73013971EDA3657E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3759EFBCC278851083A9BDDA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* iOSLogger_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSLogger_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,12 +155,10 @@
 			isa = PBXGroup;
 			children = (
 				04925D1920765634003A0E5B /* Headers */,
-				04925D1A20765634003A0E5B /* iOSLogger */,
 				04925D2120765634003A0E5B /* Local Podspecs */,
 				04925D2220765634003A0E5B /* Manifest.lock */,
 				04925D2320765634003A0E5B /* Pods.xcodeproj */,
 				04925D2620765634003A0E5B /* Target Support Files */,
-				04925D4020765634003A0E5B /* Zip */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -206,33 +168,6 @@
 			children = (
 			);
 			path = Headers;
-			sourceTree = "<group>";
-		};
-		04925D1A20765634003A0E5B /* iOSLogger */ = {
-			isa = PBXGroup;
-			children = (
-				04925D1B20765634003A0E5B /* iOSLogger */,
-				04925D1F20765634003A0E5B /* LICENSE */,
-				04925D2020765634003A0E5B /* README.md */,
-			);
-			path = iOSLogger;
-			sourceTree = "<group>";
-		};
-		04925D1B20765634003A0E5B /* iOSLogger */ = {
-			isa = PBXGroup;
-			children = (
-				04925D1C20765634003A0E5B /* Classes */,
-			);
-			path = iOSLogger;
-			sourceTree = "<group>";
-		};
-		04925D1C20765634003A0E5B /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				04925D1D20765634003A0E5B /* Header.h */,
-				04925D1E20765634003A0E5B /* IOSLogger.swift */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		04925D2120765634003A0E5B /* Local Podspecs */ = {
@@ -247,7 +182,6 @@
 			children = (
 				04925D5820765634003A0E5B /* iOSLogger.framework */,
 				04925D5A20765634003A0E5B /* Pods_Demo.framework */,
-				04925D5C20765634003A0E5B /* Zip.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -303,43 +237,6 @@
 				04925D3F20765634003A0E5B /* Zip.xcconfig */,
 			);
 			path = Zip;
-			sourceTree = "<group>";
-		};
-		04925D4020765634003A0E5B /* Zip */ = {
-			isa = PBXGroup;
-			children = (
-				04925D4120765634003A0E5B /* LICENSE */,
-				04925D4220765634003A0E5B /* README.md */,
-				04925D4320765634003A0E5B /* Zip */,
-			);
-			path = Zip;
-			sourceTree = "<group>";
-		};
-		04925D4320765634003A0E5B /* Zip */ = {
-			isa = PBXGroup;
-			children = (
-				04925D4420765634003A0E5B /* minizip */,
-				04925D4D20765634003A0E5B /* QuickZip.swift */,
-				04925D4E20765634003A0E5B /* Zip.h */,
-				04925D4F20765634003A0E5B /* Zip.swift */,
-				04925D5020765634003A0E5B /* ZipUtilities.swift */,
-			);
-			path = Zip;
-			sourceTree = "<group>";
-		};
-		04925D4420765634003A0E5B /* minizip */ = {
-			isa = PBXGroup;
-			children = (
-				04925D4520765634003A0E5B /* crypt.h */,
-				04925D4620765634003A0E5B /* ioapi.c */,
-				04925D4720765634003A0E5B /* ioapi.h */,
-				04925D4820765634003A0E5B /* module.modulemap */,
-				04925D4920765634003A0E5B /* unzip.c */,
-				04925D4A20765634003A0E5B /* unzip.h */,
-				04925D4B20765634003A0E5B /* zip.c */,
-				04925D4C20765634003A0E5B /* zip.h */,
-			);
-			path = minizip;
 			sourceTree = "<group>";
 		};
 		607FACC71AFB9204008FA782 = {
@@ -496,13 +393,6 @@
 			remoteRef = 04925D5920765634003A0E5B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		04925D5C20765634003A0E5B /* Zip.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Zip.framework;
-			remoteRef = 04925D5B20765634003A0E5B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -512,22 +402,18 @@
 			files = (
 				04925D6420765634003A0E5B /* Podfile in Resources */,
 				04925D6320765634003A0E5B /* Demo.xcworkspace in Resources */,
-				04925D6720765634003A0E5B /* LICENSE in Resources */,
 				04925D6120765634003A0E5B /* Info.plist in Resources */,
 				04925D7420765634003A0E5B /* Pods-Demo.release.xcconfig in Resources */,
 				04925D6C20765634003A0E5B /* iOSLogger.xcconfig in Resources */,
 				04925D6020765634003A0E5B /* Main.storyboard in Resources */,
 				04925D7120765634003A0E5B /* Pods-Demo-frameworks.sh in Resources */,
-				04925D7920765634003A0E5B /* README.md in Resources */,
 				04925D7520765634003A0E5B /* Info.plist in Resources */,
 				04925D6F20765634003A0E5B /* Pods-Demo-acknowledgements.plist in Resources */,
 				04925D6920765634003A0E5B /* Manifest.lock in Resources */,
 				04925D5E20765634003A0E5B /* Assets.xcassets in Resources */,
 				04925D6E20765634003A0E5B /* Pods-Demo-acknowledgements.markdown in Resources */,
-				04925D6820765634003A0E5B /* README.md in Resources */,
 				04925D6A20765634003A0E5B /* Info.plist in Resources */,
 				04925D5F20765634003A0E5B /* LaunchScreen.storyboard in Resources */,
-				04925D7820765634003A0E5B /* LICENSE in Resources */,
 				04925D6520765634003A0E5B /* Podfile.lock in Resources */,
 				04925D7220765634003A0E5B /* Pods-Demo-resources.sh in Resources */,
 				04925D7320765634003A0E5B /* Pods-Demo.debug.xcconfig in Resources */,
@@ -546,12 +432,10 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iOSLogger_Tests/Pods-iOSLogger_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Zip/Zip.framework",
 				"${BUILT_PRODUCTS_DIR}/iOSLogger/iOSLogger.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Zip.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iOSLogger.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -584,19 +468,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04925D7B20765634003A0E5B /* unzip.c in Sources */,
 				04925D6B20765634003A0E5B /* iOSLogger-dummy.m in Sources */,
 				04925D6220765634003A0E5B /* ViewController.swift in Sources */,
-				04925D7D20765634003A0E5B /* QuickZip.swift in Sources */,
-				04925D7C20765634003A0E5B /* zip.c in Sources */,
-				04925D7F20765634003A0E5B /* ZipUtilities.swift in Sources */,
-				04925D7A20765634003A0E5B /* ioapi.c in Sources */,
-				04925D6620765634003A0E5B /* IOSLogger.swift in Sources */,
 				04925D7020765634003A0E5B /* Pods-Demo-dummy.m in Sources */,
 				04925D5D20765634003A0E5B /* AppDelegate.swift in Sources */,
 				04925D7620765634003A0E5B /* Zip-dummy.m in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
-				04925D7E20765634003A0E5B /* Zip.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
